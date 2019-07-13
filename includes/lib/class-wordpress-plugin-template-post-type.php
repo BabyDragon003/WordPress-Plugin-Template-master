@@ -18,27 +18,6 @@ class WordPress_Plugin_Template_Post_Type {
 	 * The name for the custom post type.
 	 *
 	 * @var     string
-	 * @access  public
-	 * @since   1.0.0
-	 */
-	public $post_type;
-
-	/**
-	 * The plural name for the custom post type posts.
-	 *
-	 * @var     string
-	 * @access  public
-	 * @since   1.0.0
-	 */
-	public $plural;
-
-	/**
-	 * The singular name for the custom post type posts.
-	 *
-	 * @var     string
-	 * @access  public
-	 * @since   1.0.0
-	 */
 	public $single;
 
 	/**
