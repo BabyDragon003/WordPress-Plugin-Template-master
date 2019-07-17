@@ -1,3 +1,4 @@
+<?php
 /**
  * Main plugin class file.
  *

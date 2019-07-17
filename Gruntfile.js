@@ -1,13 +1,8 @@
+/* jshint node:true */
 module.exports = function( grunt ){
 	'use strict';
 
 	grunt.initConfig({
-		// setting folder templates
-		dirs: {
-			css: 'assets/css',
-			less: 'assets/css',
-			js: 'assets/js'
-		},
 
 		// Compile all .less files.
 		less: {

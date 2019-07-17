@@ -1,13 +1,8 @@
+<?php
 /**
  * Post type Admin API file.
  *
  * @package WordPress Plugin Template/Includes
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
 /**
  * Admin API class.
  */

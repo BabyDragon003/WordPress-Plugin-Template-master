@@ -1,3 +1,4 @@
+# Copyright (C) 2014 WordPress Plugin Template
 # This file is distributed under the same license as the WordPress Plugin Template package.
 msgid ""
 msgstr ""

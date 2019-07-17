@@ -1,13 +1,8 @@
+<?php
 /**
  * Settings class file.
  *
  * @package WordPress Plugin Template/Settings
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
 /**
  * Settings class.
  */

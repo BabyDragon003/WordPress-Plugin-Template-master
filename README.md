@@ -1,13 +1,8 @@
+[![Build Status](https://www.travis-ci.org/wpugph/WordPress-Plugin-Template.svg?branch=master)](https://www.travis-ci.org/wpugph/WordPress-Plugin-Template)
 
 WordPress Plugin Template
 =========================
 
-A robust and GPL-licensed code template for creating a standards-compliant WordPress plugin.
-
-
-## Why this template?
-
-After writing many WordPress plugins I slowly developed my own coding style and way of doing things - this template is the culmination of what I've learnt along the way. I use this template as a base for any plugin that I start building and I thought it might benefit more people if I shared it around.
 
 ## How do I use it?
 
