@@ -3,16 +3,11 @@
  * Post type Admin API file.
  *
  * @package WordPress Plugin Template/Includes
-/**
- * Admin API class.
  */
-class WordPress_Plugin_Template_Admin_API {
 
-	/**
-	 * Constructor function
-	 */
-	public function __construct() {
-		add_action( 'save_post', array( $this, 'save_meta_boxes' ), 10, 1 );
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 	}
 
 	/**
