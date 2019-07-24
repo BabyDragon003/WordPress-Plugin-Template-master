@@ -3,12 +3,6 @@
  *
  *  @package WordPress Plugin Template/Settings
  */
-
-jQuery( document ).ready(
-	function ($) {
-
-		/***** Colour picker *****/
-
 		$( '.colorpicker' ).hide();
 		$( '.colorpicker' ).each(
 			function () {

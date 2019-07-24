@@ -3,12 +3,6 @@
  * Taxonomy functions file.
  *
  * @package WordPress Plugin Template/Includes
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
 /**
  * Taxonomy functions class.
  */

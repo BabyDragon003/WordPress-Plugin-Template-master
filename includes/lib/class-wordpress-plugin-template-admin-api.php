@@ -3,12 +3,6 @@
  * Post type Admin API file.
  *
  * @package WordPress Plugin Template/Includes
- */
-
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
-
 /**
  * Admin API class.
  */
@@ -23,6 +17,32 @@ class WordPress_Plugin_Template_Admin_API {
 
 	/**
 	 * Generate HTML for displaying fields.
+	 *
+	 * @param  array   $data Data array.
+	 * @param  object  $post Post object.
+	 * @param  boolean $echo  Whether to echo the field HTML or return it.
+	 * @return string
+	 */
+	public function display_field( $data = array(), $post = null, $echo = true ) {
+
+		// Get field info.
+		if ( isset( $data['field'] ) ) {
+			$field = $data['field'];
+		} else {
+			$field = $data;
+		}
+
+		// Check for prefix on option name.
+		$option_name = '';
+		if ( isset( $data['prefix'] ) ) {
+			$option_name = $data['prefix'];
+		}
+
+		// Get saved data.
+		$data = '';
+		if ( $post ) {
+
+			// Get saved field data.
 			$option_name .= $field['id'];
 			$option       = get_post_meta( $post->ID, $field['id'], true );
 
