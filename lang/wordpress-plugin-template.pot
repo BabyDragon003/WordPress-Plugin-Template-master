@@ -8,17 +8,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2014-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-
-#: classes/post-types/class-wordpress-plugin-template-post_type.php:52
-#: includes/post-types/class-wordpress-plugin-template-post_type.php:42
-msgctxt "post type general name"
-msgid "Post Type"
-msgstr ""
-
-#: classes/post-types/class-wordpress-plugin-template-post_type.php:53
 #: includes/post-types/class-wordpress-plugin-template-post_type.php:43
 msgctxt "post type singular name"
 msgid "Post Type"
