@@ -13,16 +13,11 @@ jQuery( document ).ready(
 		$( '.colorpicker' ).each(
 			function () {
 				$( this ).farbtastic( $( this ).closest( '.color-picker' ).find( '.color' ) );
-						}
-					}
-				);
 			}
 		);
 
-		/***** Uploading images *****/
-
-		var file_frame;
-
+		$( '.color' ).click(
+			function () {
 		jQuery.fn.uploadMediaFile = function (button, preview_media) {
 			var button_id  = button.attr( 'id' );
 			var field_id   = button_id.replace( '_button', '' );

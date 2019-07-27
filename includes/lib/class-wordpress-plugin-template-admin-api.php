@@ -13,6 +13,22 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Admin API class.
  */
 class WordPress_Plugin_Template_Admin_API {
+
+	/**
+	 * Constructor function
+	 */
+	public function __construct() {
+		add_action( 'save_post', array( $this, 'save_meta_boxes' ), 10, 1 );
+	}
+
+	/**
+	 * Generate HTML for displaying fields.
+	 *
+	 * @param  array   $data Data array.
+	 * @param  object  $post Post object.
+	 * @param  boolean $echo  Whether to echo the field HTML or return it.
+	 * @return string
+	 */
 	public function display_field( $data = array(), $post = null, $echo = true ) {
 
 		// Get field info.
