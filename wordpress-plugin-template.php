@@ -1,4 +1,3 @@
-<?php
 /**
  * Plugin Name: WordPress Plugin Template
  * Version: 1.0.0

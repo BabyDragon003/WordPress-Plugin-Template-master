@@ -1,4 +1,3 @@
-/**
  * Plugin Template js settings.
  *
  *  @package WordPress Plugin Template/Settings
@@ -18,6 +17,27 @@ jQuery( document ).ready(
 
 		$( '.color' ).click(
 			function () {
+				$( this ).closest( '.color-picker' ).find( '.colorpicker' ).fadeIn();
+			}
+		);
+
+		$( document ).mousedown(
+			function () {
+				$( '.colorpicker' ).each(
+					function () {
+						var display = $( this ).css( 'display' );
+						if (display == 'block') {
+							$( this ).fadeOut();
+						}
+					}
+				);
+			}
+		);
+
+		/***** Uploading images *****/
+
+		var file_frame;
+
 		jQuery.fn.uploadMediaFile = function (button, preview_media) {
 			var button_id  = button.attr( 'id' );
 			var field_id   = button_id.replace( '_button', '' );

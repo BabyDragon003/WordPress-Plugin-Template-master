@@ -1,4 +1,3 @@
-<?php
 /**
  * Post type Admin API file.
  *
