@@ -1,3 +1,4 @@
+<?php
 /**
  * Taxonomy functions file.
  *
