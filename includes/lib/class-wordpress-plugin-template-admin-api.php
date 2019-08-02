@@ -8,16 +8,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-	}
 
-	/**
-	 * Generate HTML for displaying fields.
-	 *
-	 * @param  array   $data Data array.
-	 * @param  object  $post Post object.
-	 * @param  boolean $echo  Whether to echo the field HTML or return it.
-	 * @return string
-	 */
+/**
+ * Admin API class.
+ */
+class WordPress_Plugin_Template_Admin_API {
 	public function display_field( $data = array(), $post = null, $echo = true ) {
 
 		// Get field info.
