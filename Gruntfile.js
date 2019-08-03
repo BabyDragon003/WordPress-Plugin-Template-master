@@ -13,6 +13,22 @@ module.exports = function( grunt ){
 		// Compile all .less files.
 		less: {
 			compile: {
+				options: {
+					// These paths are searched for @imports
+					paths: ['<%= less.css %>/']
+				},
+				files: [{
+					expand: true,
+					cwd: '<%= dirs.css %>/',
+					src: [
+						'*.less',
+						'!mixins.less'
+					],
+					dest: '<%= dirs.css %>/',
+					ext: '.css'
+				}]
+			}
+		},
 
 		// Minify all .css files.
 		cssmin: {

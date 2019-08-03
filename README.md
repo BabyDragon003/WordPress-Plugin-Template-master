@@ -13,6 +13,22 @@ After writing many WordPress plugins I slowly developed my own coding style and 
 ## How do I use it?
 
 You can simply copy the files out of this repo and rename everything as you need it, but to make things easier I have included a [shell script](https://github.com/hlashbrooke/WordPress-Plugin-Template/blob/master/build-plugin.sh) in this repo that will automatically copy the files to a new folder, remove all traces of the existing git repo, rename everything in the files according to your new plugin name, and initialise a new git repo in the folder if you choose to do so.
+
+### Running the script
+
+You can run the script just like you would run any shell script - it does not take any arguments, so you don't need to worry about that. Once you start the script it will ask for three things:
+
+1. **Plugin name** - this must be the full name of your plugin, with correct capitalisation and spacing.
+2. **Destination folder** - this will be the folder where your new plugin will be created - typically this will be your `wp-content/plugins` folder. You can provide a path that is relative to the script, or an absolute path - either will work.
+3. **Include Grunt support (y/n)** - if you enter 'y' here then the Grunt files will be included in the new plugin folder.
+4. **Initialise new git repo (y/n)** - if you enter 'y' here then a git repo will be initialised in the new plugin folder.
+
+### API functions
+
+As of v3.0 of this template, there are a few libraries built into it that will make a number of common tasks a lot easier. I will expand on these libraries in future versions.
+
+#### Registering a new post type
+
 Using the [post type API](https://github.com/hlashbrooke/WordPress-Plugin-Template/blob/master/includes/lib/class-wordpress-plugin-template-post-type.php) and the wrapper function from the main plugin class you can easily register new post types with one line of code. For example if you wanted to register a `listing` post type then you could do it like this:
 
 `WordPress_Plugin_Template()->register_post_type( 'listing', __( 'Listings', 'wordpress-plugin-template' ), __( 'Listing', 'wordpress-plugin-template' ) );`
