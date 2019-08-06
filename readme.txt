@@ -1,4 +1,3 @@
-=== WordPress Plugin Template ===
 Contributors: hlashbrooke
 Donate link: http://www.hughlashbrooke.com/donate
 Tags: wordpress, plugin, template
