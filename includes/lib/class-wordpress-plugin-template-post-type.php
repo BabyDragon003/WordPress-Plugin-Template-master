@@ -1,3 +1,4 @@
+<?php
 /**
  * Post type declaration file.
  *

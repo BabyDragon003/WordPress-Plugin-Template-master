@@ -1,3 +1,4 @@
+[![Build Status](https://www.travis-ci.org/wpugph/WordPress-Plugin-Template.svg?branch=master)](https://www.travis-ci.org/wpugph/WordPress-Plugin-Template)
 
 WordPress Plugin Template
 =========================
