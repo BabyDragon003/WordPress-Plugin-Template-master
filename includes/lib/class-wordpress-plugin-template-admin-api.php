@@ -8,6 +8,17 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+
+/**
+ * Admin API class.
+ */
+class WordPress_Plugin_Template_Admin_API {
+
+	/**
+	 * Constructor function
+	 */
+	public function __construct() {
+		add_action( 'save_post', array( $this, 'save_meta_boxes' ), 10, 1 );
 	}
 
 	/**
